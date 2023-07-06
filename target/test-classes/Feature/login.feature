@@ -16,3 +16,11 @@ Background:
     When I click the login button
     Then I should see the home page
     #And it should fail 
+    
+    
+  Scenario: Login using invalid credentials
+    
+    And I enter "wrong.us.basic" username
+    And I enter "Welcome233" password
+    When I click the login button
+    Then I should see the home page
